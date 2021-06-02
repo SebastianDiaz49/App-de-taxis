@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<!-- saved from url=(0039)https://mivacuna.salud.gob.mx/index.php -->
+<html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Mi vacuna</title>
+<script type="text/javascript" async="" src="./Mi vacuna SGM_files/recaptcha__es_419.js.descarga" crossorigin="anonymous" integrity="sha384-YbpydcaRVUGfEMbvbmwmvFQJ5Flo3IQ35F0E8sP2XXgaxSG0E842ryeqTkAuqIa3"></script><script src="./Mi vacuna SGM_files/api.js.descarga"></script>
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta name="robots" content="noindex">
+<meta name="googlebot" content="noindex"> 
+<meta name="mobile-web-app-capable" content="yes">
+<link rel="stylesheet" href="./Mi vacuna SGM_files/all.min.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+<link rel="stylesheet" href="./Mi vacuna SGM_files/css" integrity="sha384-9uZxqYXGPZfYeOA9Noy+KiMbKqTEguwn6exm/6ahYYW/pXW23uMTDiXB+OgKb9zP" crossorigin="anonymous">
+<link rel="icon" type="image/png" href="https://mivacuna.salud.gob.mx/favicon.png">
+<script src="./Mi vacuna SGM_files/jquery-3.5.1.js.descarga" integrity="sha384-/LjQZzcpTzaYn7qWqRIWYC5l8FWEZ2bIHIz0D73Uzba4pShEcdLdZyZkI4Kv676E" crossorigin="anonymous"></script>
+<script src="./Mi vacuna SGM_files/bootstrap.min.js.descarga" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="./Mi vacuna SGM_files/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="./Mi vacuna SGM_files/mivacuna.css" media="screen">
+<script src="./Mi vacuna SGM_files/kcode.js.descarga" integrity="sha384-bkRr8OedRwRrjHNQw9XeVmr4PoQ5G1N5p8YSWAmZOm0MGQxk6oO9G6IeuyLfZB87" type="text/javascript"></script>
+</head>
+
+<body>
+<h2 align="center" class="hh"><br>
+  <img src="./Mi vacuna SGM_files/gmx.png">
+<br><span class="tit"></span></h2>
+<div class="navvbar">
+  <div class="dropdownav"></div>
+</div>
+
+<div class="container-fluid mt-4 pr-0 pl-0 h-50 d-flex flex-column ">
+
+
+  
+  <div id="divcurp" class="row justify-content-center  d-none ">
+    <div class="col-sm-6 ">
+      <div class="panel panel-default border">
+        <div class="panel-heading p-2">
+          <div class="panel-title">Tengo 50 años cumplidos y me quiero vacunar:</div>
+        </div>
+        <div class="panel-body p-4">
+          <form id="curpform" class="form-horizontal" role="form" method="post">
+           
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text"><i class="fas fa-user"></i></span>
+              </div>
+              <input type="hidden" name="_curpform_token" id="_curpform_token" value="c49da52c698c1e40993776dc08b346c87448489cf1c406a4ba5e0975e881a63a">
+              <input id="curp" type="text" class="form-control form-control-lg" name="curp" value="" maxlength="18" placeholder="Introducir CURP" required="">
+
+            </div>
+
+          </form>
+          <div class="row">
+            <div class="col-sm-12"><div id="dato1"></div></div>
+            <div class="col-sm-8">
+              <div class="g-recaptcha" data-sitekey="6Le0JEgaAAAAAPYJtRQ9rX9uOnZLZKqqISBGBIv5" data-callback="enableBtn"><div style="width: 304px; height: 78px;"><div><iframe title="reCAPTCHA" src="./Mi vacuna SGM_files/anchor.html" width="304" height="78" role="presentation" name="a-eylu5ctgve3y" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div><iframe style="display: none;" src="./Mi vacuna SGM_files/saved_resource.html"></iframe></div>
+            </div>
+	    	    <div class="col-sm-4 p-4 text-center">
+	    	      <button type="button" class="btn btn-primary pull-right btn-lg" id="btn-confirma" disabled="">Confirmar CURP</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div> 
+
+
+  
+
+    <div class="row mt-4 text-center">
+    <div class="col-sm-3 p-4"><a href="https://mivacuna.salud.gob.mx/pdf/registro_vacuna_imgns_c6.pdf" class="btn btn-info btn-lg" role="button">Guía para registrarse en mivacuna</a></div>
+    <div class="col-sm-3 p-4"><a href="https://www.gob.mx/curp/" target="_blank" class="btn btn-success btn-lg" role="button">¿No conoces tu CURP...? Consúltala aquí</a></div>
+    <div class="col-sm-3 p-4"><a href="https://mivacuna.salud.gob.mx/pdf/aviso_de_privacidad_integral.pdf" class="btn btn-secondary btn-lg" role="button">Aviso de Privacidad</a></div>
+    <div class="col-sm-3 p-4"><a href="https://mivacuna.salud.gob.mx/pdf/info_segunda_dosis.pdf" class="btn btn btn-light btn-lg" role="button">Información segunda dosis</a></div>
+  </div>
+    
+
+    <div class="row justify-content-center pb-4">
+    <div id="noexistee" class="col-sm-6 d-none">
+    
+      <div class="panel panel-default border">
+        <div class="panel-heading p-2">
+          <div class="panel-title">Resultado:</div>
+        </div>
+        <div class="panel-body p-4">
+          <p class="h3 font-weight-bold txt_brown text-center">
+            Por ahora el registro solo está habilitado para personas a partir de 50 años
+          </p>
+        </div>
+
+        <div class="col-sm-12 pb-4 text-center">
+        <a href="https://mivacuna.salud.gob.mx/index.php" class="btn btn-secondary" role="button">Regresar</a>
+        </div>
+      </div>    </div>
+  </div>
+
+  
+
+
+
+  
+  <form action="https://mivacuna.salud.gob.mx/index.php" accept-charset="UTF-8" method="post" name="vacunar" id="vacunar" onsubmit="return validarFormulario();">
+
+  <div class="row justify-content-center">
+    <div class="col-sm-10 d-none" id="confirmacion"> 
+      <div class="panel panel-default border">
+    		<div class="panel-heading text-center  p-2">
+         <div class="panel-title">Confirmación de CURP</div>
+    		</div>
+    		<div class="panel-body p-4">
+    		  <div class="form-group">
+              <div class="row text-center">
+                <div class="col-sm-4">
+                  <input type="hidden" name="_vacunaform_token" id="_vacunaform_token" value="287d50d638430fb9d50206f7ef4aed7bb04dd56aa5c2b74a4a7adffc25671e70">
+                  <div><label for="nombre">Nombre:</label></div>
+    	            <div class="str" id="nombred"></div>
+                  <input type="hidden" name="nombre" id="nombre" value="">
+                </div>
+                <div class="col-sm-4">
+                  <div><label for="paterno">Primer apellido:</label></div>
+    	            <div class="str" id="paternod"></div>
+                  <input type="hidden" name="paterno" id="paterno" value="">
+                </div>
+                <div class="col-sm-4">
+                  <div><label for="materno">Segundo apellido:</label></div>
+    	            <div class="str" id="maternod"></div>
+                  <input type="hidden" name="materno" id="materno" value="">
+                </div>
+              </div><!-- .row -->
+              <div class="row text-center">
+                <div class="col-sm-3">
+                  <div><label for="curp">CURP:</label></div>
+    	            <div class="str" id="curppd"></div>
+                  <input type="hidden" name="curp" id="curpp">
+                </div>
+                <div class="col-sm-3">
+                  <div><label for="fechanac">Fecha de nacimiento:</label></div>
+    	            <div class="str" id="fechanacd"></div>
+                  <input type="hidden" name="fechanac" id="fechanac" value="">
+                 </div>
+                <div class="col-sm-3">
+                  <div><label for="entidad">Entidad de nacimiento:</label></div>
+    	            <div class="str" id="entidad_d"></div>
+                  <input type="hidden" name="entidad" id="entidad" value="">
+                </div>
+                <div class="col-sm-3">
+                  <div><label for="sexo">Sexo:</label></div>
+    	            <div class="str" id="sexod"></div>
+                  <input type="hidden" name="sexo" id="sexo" value="">
+                </div>
+    	          <div class="col-sm-12 mt-4">                  <button type="button" class="btn btn-primary" onclick="this.disabled=true; this.value=&#39;Procesando…&#39;;" id="desvac">Quiero vacunarme</button>
+    	          </div>
+                <div class="col-sm-12 mt-4">
+                <a href="https://mivacuna.salud.gob.mx/index.php" class="btn btn-secondary" role="button">Regresar</a>
+                </div>
+              </div><!-- .row -->
+          </div>        </div>      </div>     </div>
+  </div>
+  
+    <div class="row justify-content-center">
+    <div class="col-sm-10 d-none" id="registro">
+      <div class="panel panel-default mt-4 border">
+        <div class="panel-heading text-center p-2">
+          <div class="panel-title">Lugar en donde voy a vacunarme y datos para localizarme</div>
+        </div>
+        <div class="panel-body p-4">
+
+          <div class="row">
+            <div class="col-sm-4">
+              <div><label for="calle">Entidad:</label></div>
+  	          <select name="entidadd" id="entidadd" class="form-control" required="">
+  			       <option value="0">--</option>
+  			       <option value="1">AGUASCALIENTES</option>
+  			       <option value="2">BAJA CALIFORNIA</option>
+  			       <option value="3">BAJA CALIFORNIA SUR</option>
+  			       <option value="4">CAMPECHE</option>
+  			       <option value="7">CHIAPAS</option>
+  			       <option value="8">CHIHUAHUA</option>
+  			       <option value="5">COAHUILA</option>
+  			       <option value="6">COLIMA</option>
+  			       <option value="9">DISTRITO FEDERAL</option>
+  			       <option value="10">DURANGO</option>
+  			       <option value="11">GUANAJUATO</option>
+  			       <option value="12">GUERRERO</option>
+  			       <option value="13">HIDALGO</option>
+  			       <option value="14">JALISCO</option>
+  			       <option value="15">MEXICO</option>
+  			       <option value="16">MICHOACAN</option>
+  			       <option value="17">MORELOS</option>
+  			       <option value="18">NAYARIT</option>
+  			       <option value="19">NUEVO LEON</option>
+  			       <option value="20">OAXACA</option>
+  			       <option value="21">PUEBLA</option>
+  			       <option value="22">QUERETARO</option>
+  			       <option value="23">QUINTANA ROO</option>
+  			       <option value="24">SAN LUIS POTOSI</option>
+  			       <option value="25">SINALOA</option>
+  			       <option value="26">SONORA</option>
+  			       <option value="27">TABASCO</option>
+  			       <option value="28">TAMAULIPAS</option>
+  			       <option value="29">TLAXCALA</option>
+  			       <option value="30">VERACRUZ</option>
+  			       <option value="31">YUCATAN</option>
+  			       <option value="32">ZACATECAS</option>
+  		        </select>
+            </div> 
+            <div class="col-sm-4">
+              <div><label for="calle">Municipio:</label></div>
+              <select name="municipio" id="municipio" class="form-control">
+              </select>
+            </div> 
+            <div class="col-sm-4">
+              <div><label for="calle">CP:</label></div>
+              <input class="form-control" type="text" name="cp" id="cp" value="" maxlength="5">
+            </div> 
+          </div>
+          <div class="row">
+            <div class="col-sm-3">
+              <div><label for="curp">Teléfono (1):</label></div>
+              <input class="form-control" type="text" name="telefono_1" id="telefono_1" value="" maxlength="10">
+            </div>
+            <div class="col-sm-3">
+              <div><label for="curp">Teléfono (2):</label></div>
+              <input class="form-control" type="text" name="telefono_2" id="telefono_2" value="" maxlength="10">
+            </div>
+            <div class="col-sm-3">
+              <div><label for="curp">Correo electrónico personal:</label></div>
+              <input class="form-control" type="email" name="correoe" id="correoe" value="">
+            </div>
+            <div class="col-sm-3">
+              <div><label for="curp">Correo electrónico de apoyo:</label></div>
+              <input class="form-control" type="email" name="correoea" id="correoea" value="">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12">
+              <div><label for="curp">Notas de contacto:</label></div>
+              <textarea name="nota" id="nota" class="form-control"></textarea>
+             </div>
+          </div>
+
+          <div class="row">
+
+          <div class="col-sm-12 text-center pt-4">
+  	          <input type="submit" class="btn btn-primary" value="Enviar" name="confirmar" id="confirmar">
+            </div>
+          </div>
+
+        </div>      </div>    </div>
+  </div>
+  
+  </form>
+
+
+    <div class="row justify-content-center">
+    <div class="col-sm-6 text-center">
+      <div id="consulta_curp"></div>
+    </div>
+  </div>
+
+  
+
+    <div class="row justify-content-center">
+    <div id="resultado" class="col-sm-6  ">
+      <div class="panel panel-default border">
+      	<div class="panel-heading text-center p-2">
+          <div class="panel-title">Resultado</div>
+      	</div>
+      	<div class="panel-body p-4">
+          <p class="h3 font-weight-bold txt_brown text-center">
+            Ud. ha sido registrado exitosamente.<br>Con el folio: AM-27890206.<br>
+            Espere nuestra llamada donde le indicaremos su fecha y lugar de vacunación<br>
+            CURP: GUMS700120HGTRRB06
+            </p>          <div class="col-sm-12 text-center">
+  		      <form name="fpdf" id="fpdf" action="https://mivacuna.salud.gob.mx/pdf.php" method="post" target="_blank">
+              <input id="curphd" name="curphd" type="hidden" value="GUMS700120HGTRRB06">
+              <button type="submit" class="btn btn-secondary" id="comprobante" style="display: none;">Comprobante</button>
+            </form>
+	      </div>
+          <div class="col-sm-12 text-center p-4"><a href="https://mivacuna.salud.gob.mx/pdf/expediente_vacunacion.pdf" target="_blank" class="btn btn btn-light btn-lg" role="button">Expediente de vacunación</a></div>
+        </div>      </div>    </div>
+  </div>
+  
+
+
+
+
+
+    <div class="row justify-content-center">
+    <div id="solicitar" class="text-center p-4  ">
+        <button type="button" class="btn btn-secondary" id="boton-aclara">En caso de error, solicitar llamada de aclaración</button>
+    </div>
+  </div>
+  
+
+    <div class="row justify-content-center">
+    <div id="aclaracion" class="col-sm-6 d-none pb-4">
+      <div class="panel panel-default border">
+      	<div class="panel-heading text-center p-2">
+          <div class="panel-title">Aclaraciones</div>
+      	</div>
+      	<div class="panel-body p-4">
+          <form id="aclaraform" class="form-horizontal" role="form">
+                      <input type="hidden" name="_aclaraform_token" id="_aclaraform_token" value="9b4b2b43b639c1ef222010505422a5a866ed0667cdc9cb916deec3f64605661d">
+            <div class="col-sm-12">
+              Ingrese su teléfono, en caso de que desee alguna aclaración:
+            </div>
+            <div class="col-sm-12">
+              <input id="curp_aclara" type="hidden" name="curp_aclara" value="GUMS700120HGTRRB06" required="">
+              <input id="telefono_aclara" type="text" class="form-control" name="telefono_aclara" value="" maxlength="10" placeholder="Introducir número de teléfono" required="">
+            </div>
+            <div id="dato1"></div>
+
+            <div class="col-sm-12 p-4 text-right">
+              <button type="button" class="btn btn-primary" id="btn-aclara">Enviar</button>
+            </div>
+
+          </form>
+        </div>      </div>    </div>
+  </div>
+  
+
+    <div class="row justify-content-center">
+    <div id="noexiste" class="col-sm-6 d-none">
+      <div class="panel panel-default border">
+      	<div class="panel-heading text-center p-2">
+          <div class="panel-title">Resultado:</div>
+      	</div>
+      	<div class="panel-body p-4 text-center">
+          <p class="h3 font-weight-bold txt_brown text-center">
+            La CURP no se encuentra registrada
+          </p>
+          <div class="col-sm-12 text-center">
+            <a href="https://mivacuna.salud.gob.mx/index.php" class="btn btn-secondary" role="button">Regresar</a>
+  	      </div>
+        </div>      </div>    </div>
+  </div>
+  
+
+  <div class="col-sm-12 text-center bg-info text-white mt-5">El horario de operación es continuo  de lunes a domingo.</div>
+  <div class="col-sm-12 text-center mt-4">
+    <small class="text-muted">La aplicación de la Política Nacional de Vacunación es de carácter público, ajena a cualquier partido político. Queda prohibido su uso para fines distintos a los establecidos.
+    </small>
+    </div>
+</div> <!-- End .container-fluid -->
+
+
+<footer class="bg-light d-flex">
+      <div class="d-flex  mt-5">
+
+      </div>
+</footer>
+
+
+
+<script src="./Mi vacuna SGM_files/basic.js.descarga"></script>
+
+
+<div style="background-color: rgb(255, 255, 255); border: 1px solid rgb(204, 204, 204); box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 3px; position: absolute; transition: visibility 0s linear 0.3s, opacity 0.3s linear 0s; opacity: 0; visibility: hidden; z-index: 2000000000; left: 0px; top: -10000px;"><div style="width: 100%; height: 100%; position: fixed; top: 0px; left: 0px; z-index: 2000000000; background-color: rgb(255, 255, 255); opacity: 0.05;"></div><div class="g-recaptcha-bubble-arrow" style="border: 11px solid transparent; width: 0px; height: 0px; position: absolute; pointer-events: none; margin-top: -11px; z-index: 2000000000;"></div><div class="g-recaptcha-bubble-arrow" style="border: 10px solid transparent; width: 0px; height: 0px; position: absolute; pointer-events: none; margin-top: -10px; z-index: 2000000000;"></div><div style="z-index: 2000000000; position: relative;"><iframe title="Desafío de reCAPTCHA" src="./Mi vacuna SGM_files/bframe.html" name="c-eylu5ctgve3y" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox" style="width: 100%; height: 100%;"></iframe></div></div></body></html>
